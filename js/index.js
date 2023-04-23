@@ -67,7 +67,7 @@ function gameEngine(){
         
         snakeArr = [{x: 6, y: 8}];
        
-        setTimeout(()=>{ aj=setInterval( ()=>{musicSound.play()},0)},7000);
+        setTimeout(()=>{ aj=setInterval( ()=>{musicSound.play()},0)},4000);
          temp++;
         
        
