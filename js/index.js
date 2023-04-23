@@ -44,12 +44,14 @@ function isCollide(snake) {
 function gameEngine(){
     // Part 1: Updating the snake array & Food
     if(isCollide(snakeArr)){if(temp==0)
-              {clearInterval(obj);}
+              {clearInterval(obj);
+                musicSound.pause();
+              }
        if(temp!=0)
       { clearInterval(aj);}
     
         
-                  musicSound.pause();
+                 
                     musicSound.pause();
         foodSound.pause();
     
@@ -74,7 +76,7 @@ function gameEngine(){
     // If you have eaten the food, increment the score and regenerate the food
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
         foodSound.play();
-        speed+=5;
+        speed+=10;
         score += 2;
         if(score>hiscoreval){ 
             hiscoreval = score;
