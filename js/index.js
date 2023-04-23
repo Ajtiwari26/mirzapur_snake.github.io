@@ -49,13 +49,13 @@ function gameEngine(){
       { clearInterval(aj);}
     
         
-
+                  musicSound.pause();
                     musicSound.pause();
         foodSound.pause();
     
         
         gameOverSound.play();
-        setTimeout(()=>{alert("Game Over: phir se kheloge?")},7000);
+        setTimeout(()=>{alert("Game Over: phir se kheloge?")},6000);
        // alert("Game Over.Phir se kheloge");
         inputDir =  {x: 0, y: 0}; 
         score = 0; 
